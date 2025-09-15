@@ -21,7 +21,7 @@ The project outputs **graphs** and a **PDF report** summarizing the analysis.
   - Correlation heatmap of key metrics  
 
 - **Visualization**  
-  - Each chart can be displayed individually or exported to a **single PDF** (`Retail_Analysis.pdf`) with one chart per page  
+  - Each chart can be displayed live on git pages.
 
 - **Database Integration**  
   - Uses SQLite (`retail.db`) to store `sales` and `customers` tables  
@@ -33,8 +33,7 @@ The project outputs **graphs** and a **PDF report** summarizing the analysis.
 - Python 3.x  
 - Pandas  
 - NumPy  
-- Matplotlib  
-- Seaborn  
+- Plotly
 - SQLAlchemy (SQLite backend)  
 
 ---
@@ -52,7 +51,7 @@ project/
 │   ├── load_to_sql.py        # Load CSV data into SQLite
 │
 ├── retail.db            # SQLite database (after running load_to_sql.py)
-├── Retail_Analysis.pdf  # Generated PDF report with all charts
+├── index.html  # Generated live report with all charts
 └── README.md            # Project documentation
 ```
 
@@ -77,7 +76,7 @@ python scripts/eda_multi_charts.py
 
 4. **Output**
 - Interactive charts appear one by one  
-- PDF report `Retail_Analysis.pdf` generated in project root  
+- Live report is generated in project root  
 
 ---
 
